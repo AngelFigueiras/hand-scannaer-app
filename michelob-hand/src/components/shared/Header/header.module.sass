@@ -1,0 +1,147 @@
+// Asegúrate de que la importación no tenga nada después
+@import "../../../sass/_variables"
+
+//desktop-tablet navbar styles
+.Header
+    width: 100%
+    height: 60px
+    display: flex
+    justify-content: space-between
+    align-content: center
+    background-color: #EBEBEB
+
+.logo_desktop
+    height: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 20%
+
+.logo
+    padding-left: 5px
+
+.list_sections
+    list-style: none
+    padding: 0
+    width: 78%
+    margin-top: 18px
+    display: flex
+    justify-content: flex-end
+    align-content: center
+
+    li
+        margin-right: 30px
+        color: #000407
+        font-size: 18px
+        font-weight: 700
+
+.list_sections_a
+    text-decoration: none
+
+
+.navbar_content
+    display: flex
+    align-content: center
+    width: 100%
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)
+
+
+
+.menu_content_mobile
+    visibility: hidden
+    color: $color-primary
+    background: $color-secondary
+    position: fixed
+    width: 100%
+    height: 100%
+
+.menu_mobile_open
+    visibility: visible
+
+
+
+.btn_open_menu
+    margin-top: 14px
+    width: 40px
+    height: 100%
+    visibility: hidden
+
+
+.line1,
+.line2,
+.line3 
+    width: 28px
+    height: 5px
+    background: $color-secondary
+    margin-top: 5px
+    margin-bottom: 5px
+
+.line1_2,
+.line2_2,
+.line3_2 
+    width: 28px
+    height: 5px
+    background: $color-primary
+    margin-top: 5px
+    margin-bottom: 5px
+
+.btn_open_menu_2
+    margin-top: 14px
+    width: 40px
+    height: 100%
+
+
+
+.list_sections_a_mobile
+    text-decoration: none
+    color: $color-primary
+
+.list_container
+    display: flex
+    justify-content: flex-start
+    margin-left: 15px
+
+.up_container
+    width: 100%
+    height: 5%
+    display: flex
+    justify-content: flex-end
+
+.list_sections_mobile
+    list-style: none
+    padding: 0
+    margin-top: 150px
+    display: flex
+    flex-direction: column
+
+
+    li
+        color: $color-primary
+        font-size: 18px
+        font-weight: 700
+        margin-bottom: 40px
+
+
+
+//tablet styles
+@media (max-width: $breakpoint-md)
+    .list_sections
+        display: none
+    
+    .logo
+        padding-left: 20px
+    
+    .logo_desktop
+        width: 90%
+        justify-content: flex-start
+    
+    .btn_open_menu
+        visibility: visible
+
+
+    
+    
+
+
+//mobile styles
+
